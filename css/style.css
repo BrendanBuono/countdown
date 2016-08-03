@@ -16,6 +16,18 @@
   min-height: 50%;
 }
 #clock{
-  position:absolute;
-  float:left;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width:50%;
+  margin:0 auto;
+  font-size: 72px;
+  font-family: 'Open Sans', sans-serif
+}
+
+#clock span{
+  color:white;
+  background-color:rgba(0,0,0,.2);
+  border-radius: 2px 2px 2px 2px;
+  
 }

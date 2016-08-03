@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
         <script src="js/jquery.countdown.min.js"></script>
@@ -9,16 +10,15 @@
         <div id="clock"></div>
         
         <div id="bg">
-         <img src="http://d2jxsuoefzj3jw.cloudfront.net/wp-content/uploads/sites/34/2015/02/Edinburgh_hero_OFW-1700x999.jpg" alt="" />
+         <img src="http://www.mrwallpaper.com/wallpapers/edinburgh-castle-1920x1080.jpg" alt="" />
         </div>
         <script>
             $('#clock').countdown('2016/08/05', function(event) {
                 var $this = $(this).html(event.strftime(''
-                    + '<span>%w</span> weeks '
-                    + '<span>%d</span> days '
-                    + '<span>%H</span> hr '
-                    + '<span>%M</span> min '
-                    + '<span>%S</span> sec'));
+                    + '<span>%d : </span>'
+                    + '<span>%H : </span>'
+                    + '<span>%M : </span>'
+                    + '<span>%S</span>'));
                 });
         </script>
     </body>
