@@ -34,6 +34,13 @@ img.bg {
 #clock span{
   color:white;
   background-color:rgba(0,0,0,.2);
-  border-radius: 2px 2px 2px 2px;
-  
+  border-radius: 4px 4px 4px 4px;
+}
+
+#clock span:first-child{
+  padding-left: .35em;  
+}
+
+#clock span:last-child{
+  padding-right: .35em;  
 }
