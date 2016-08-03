@@ -6,19 +6,19 @@
         <script src="js/jquery.countdown.min.js"></script>
     </head>
     <body>
+        <div id="clock"></div>
         <div id="bg">
         <img src="http://d2jxsuoefzj3jw.cloudfront.net/wp-content/uploads/sites/34/2015/02/Edinburgh_hero_OFW-1700x999.jpg" alt="">
         </div>
-        <div id="clock"></div>
         <script>
             $('#clock').countdown('2016/08/05', function(event) {
-  var $this = $(this).html(event.strftime(''
-     + '<span>%w</span> weeks '
-     + '<span>%d</span> days '
-     + '<span>%H</span> hr '
-     + '<span>%M</span> min '
-     + '<span>%S</span> sec'));
- });
+                var $this = $(this).html(event.strftime(''
+                    + '<span>%w</span> weeks '
+                    + '<span>%d</span> days '
+                    + '<span>%H</span> hr '
+                    + '<span>%M</span> min '
+                    + '<span>%S</span> sec'));
+                });
         </script>
     </body>
 </html>
