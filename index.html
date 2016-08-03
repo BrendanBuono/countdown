@@ -2,10 +2,23 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+        <script src="js/jquery.countdown.min.js"></script>
     </head>
     <body>
-<div id="bg">
-  <img src="http://d2jxsuoefzj3jw.cloudfront.net/wp-content/uploads/sites/34/2015/02/Edinburgh_hero_OFW-1700x999.jpg" alt="">
-</div>
+        <div id="bg">
+        <img src="http://d2jxsuoefzj3jw.cloudfront.net/wp-content/uploads/sites/34/2015/02/Edinburgh_hero_OFW-1700x999.jpg" alt="">
+        </div>
+        <div id="clock"></div>
+        <script>
+            $('#clock').countdown('2016/08/05', function(event) {
+2   var $this = $(this).html(event.strftime(''
+3     + '<span>%w</span> weeks '
+4     + '<span>%d</span> days '
+5     + '<span>%H</span> hr '
+6     + '<span>%M</span> min '
+7     + '<span>%S</span> sec'));
+8 });
+        </script>
     </body>
 </html>
